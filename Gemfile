@@ -4,7 +4,7 @@ gem 'rails', '3.1.3'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
-gem 'sass-rails'
+gem 'sass-rails',   '~> 3.1.5'
 gem 'bootstrap-sass'
 
 # Bundle edge Rails instead:
