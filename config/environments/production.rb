@@ -15,10 +15,7 @@ Omrails::Application.configure do
   config.assets.compress = true
 
   # Don't fallback to assets pipeline if a precompiled asset is missed
-  # config.assets.compile = false
-
-  #require by bootstrap-sass gem
-  config.assets.compile = true
+  config.assets.compile = false
 
   # Generate digests for assets URLs
   config.assets.digest = true
@@ -64,5 +61,4 @@ Omrails::Application.configure do
   # In production, :host should be set to the actual host of your application.
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
-  config.assets.initialize_on_precompile = false
 end
