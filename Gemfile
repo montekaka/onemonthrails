@@ -10,6 +10,7 @@ gem 'simple_form'
 
 group :production do
 	gem 'pg'
+	ruby '1.8.7'
 end
 
 group :development, :test do
