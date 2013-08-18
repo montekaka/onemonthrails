@@ -30,4 +30,7 @@ Omrails::Application.configure do
 
   # Set up Devise
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # Set up Image Processor for Paperclip
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end

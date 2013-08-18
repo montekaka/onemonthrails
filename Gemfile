@@ -4,13 +4,14 @@ gem 'rails', '3.1.3'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
+gem "paperclip", "~> 3.0"
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 group :production do
 	gem 'pg'
-	ruby '1.8.7'
+	ruby '1.9.2'
 end
 
 group :development, :test do
