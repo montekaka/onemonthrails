@@ -45,18 +45,20 @@ class PinsController < ApplicationController
   # POST /pins
   # POST /pins.json
   def create
-    #@pin = Pin.new(params[:pin])
-    @pin = current_user.pins.new(params[:pin])
+    
+      #@pin = Pin.new(params[:pin])
+      @pin = current_user.pins.new(params[:pin])
 
-    respond_to do |format|
-      if @pin.save
-        format.html { redirect_to @pin, :notice => 'Pin was successfully created.' }
-        format.json { render :json => @pin, :status => :created, :location => @pin }
-      else
-        format.html { render :action => "new" }
-        format.json { render :json => @pin.errors, :status => :unprocessable_entity }
+      respond_to do |format|
+        if @pin.save
+          format.html { redirect_to @pin, :notice => 'Pin was successfully created.' }
+          format.json { render :json => @pin, :status => :created, :location => @pin }
+        else
+          format.html { render :action => "new" }
+          format.json { render :json => @pin.errors, :status => :unprocessable_entity }
+        end
       end
-    end
+    
   end
 
   # PUT /pins/1
