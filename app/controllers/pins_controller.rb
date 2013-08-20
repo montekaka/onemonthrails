@@ -5,7 +5,7 @@ class PinsController < ApplicationController
   # GET /pins.json
   def index
     #@pins = Pin.all
-    @pins = Pin.order("created_at desc")
+    @pins = Pin.order("created_at desc").page(params[:page]).per_page(20)
 
     # only current user can see his own pins
     #@pins = current_user.pins.all
