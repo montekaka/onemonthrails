@@ -2,9 +2,11 @@
 	<div class="span6 offset3">
 		<div class="well">
 			<%= image_tag @pin.image %>
+			<p><%= @pin.Name %> (<%= @pin.modelnumber %>)</p>
+			<p>#<%= @pin.theme %> #<%= @pin.year %></p> 
 			<p>
 			  <%= @pin.description %>
-			</p>
+			</p>			
 			<p>
 			  <%= @pin.user.name %>
 			</p>
