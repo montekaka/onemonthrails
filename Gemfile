@@ -9,6 +9,7 @@ gem "aws-sdk"
 gem "faker"
 gem "will_paginate"
 gem "bootstrap-will_paginate"
+gem "google_drive"
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
